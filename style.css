@@ -30,6 +30,7 @@ body {
   padding: 12px 32px;
   background-color: #ff9900;
   color: #fefefe;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   border-radius: 6px;
@@ -37,6 +38,10 @@ body {
 }
 .button:hover {
   background-color: #ff7800;
+}
+hr {
+  border: transparent;
+  border-top: 1px solid #cdd1d5;
 }
 /* header */
 header {
@@ -108,32 +113,82 @@ section .button {
   color: #ff7800;
   font-weight: 700;
 }
-.menu img {
+.list img {
   width: 100%;
   margin: 20px 0 10px;
   aspect-ratio: 1 / 0.4;
   object-fit: cover;
 }
-.menu p {
+.list p {
   font-size: 15px;
   margin-bottom: 10px;
   font-weight: 600;
   color: #535353;
 }
-.menu ul {
+.list ul {
   margin: 16px 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
-.menu ul li {
+.list ul li {
   padding: 8px 16px;
   background-color: #fff7ec;
   color: #ff7800;
   font-size: 14px;
   font-weight: 700;
   border-radius: 4px;
+}
+/* 상세페이지 */
+.list.menu hr {
+  margin: 10px 0;
+}
+.list.menu ul {
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list.menu ul li {
+  padding: 0;
+  background-color: transparent;
+}
+.list.menu ul li strong {
+  color: #a0a0a0;
+  font-weight: 600;
+}
+.list.menu ul li p {
+  margin: 5px 0;
+}
+.list.menu p.sub-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.list.menu h4 {
+  font-size: 18px;
+  color: #a0a0a0;
+}
+.list.menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list.menu li span {
+  color: #ff7800;
+  margin-left: 10px;
+}
+.list.menu .info li {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.list.menu .info li p {
+  margin: 0;
+}
+.button.link {
+  margin-left: auto;
+  width: fit-content;
+  display: block;
 }
 /* footer */
 footer {
